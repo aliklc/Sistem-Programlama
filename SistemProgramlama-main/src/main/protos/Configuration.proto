@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package info;
+
+option java_package = "comm.struct.info";
+option java_outer_classname = "ConfigurationProto";
+
+message Configuration {
+  int32 fault_tolerance_level = 1;
+  MethodType method_type = 2;
+}
+
+enum MethodType {
+  START = 0;
+  STOP = 1;
+}

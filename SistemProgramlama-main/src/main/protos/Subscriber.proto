@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package info;
+
+option java_package = "comm.struct.info";
+option java_outer_classname = "SubscriberProto";
+
+message Subscriber {
+  int64 subscriber_id = 1;
+  string name         = 2;
+  string status       = 3;
+}
